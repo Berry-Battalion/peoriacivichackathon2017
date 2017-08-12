@@ -87,10 +87,12 @@
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+      
 
-      function initAutocomplete() {
+      
+      function googleMap(data) {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
+          center: {lat: 40.703545, lng: -89.579086},
           zoom: 13,
           mapTypeId: 'roadmap'
         });
@@ -153,10 +155,21 @@
           });
           map.fitBounds(bounds);
         });
-        
-        map.data.loadGeoJson('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson');
+        console.log("data:", data)
+        if(data !== undefined) {
+          console.log('in the if')
+          console.log(data)
+          for(var i = 0; i < data.length; i++) {
+            map.data.loadGeoJson(data[i]);
+          }
+        }
       }
 
+      $('#sidewalkData').click(function() {
+        console.log('clicked sidwalk')
+        googleMap(['https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson'])
+      })
+
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHTRPzRuOaOPSuV8Yd-jwIkP6vlLv1X6E&libraries=places&callback=initAutocomplete"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHTRPzRuOaOPSuV8Yd-jwIkP6vlLv1X6E&libraries=places&callback=googleMap"
          async defer></script>
