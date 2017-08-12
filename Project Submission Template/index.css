@@ -7,46 +7,6 @@ body, html {
     height: 100%;
 }
 
-/* Shad's code
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-    border-right:1px solid #bbb;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-a {
-    display: block;
-    color: white;
-    float: left;
-    padding: 5px 7px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-    padding: 0;
-}
-
-.active {
-    background-color: #FD4D00;
-}
-
-.checkbox {
-    float: left;
-}
-
-*/
 .navigation{
     list-style-type: none;
     margin: 0;
