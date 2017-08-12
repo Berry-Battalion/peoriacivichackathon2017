@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <script
             src="http://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
         <script src='./scripts/loaddata.js' ></script>
+        <script src='./scripts/loadmap.js' ></script>
         <link href='index.css' rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -23,11 +25,6 @@
           <input type="checkbox" nassme="roadtype" value="sidewalk"> Sidewalk<br>
           <input type="checkbox" name="roadtype" value="other"> Other
         </form>
-      <iframe
-        width="600"
-        height="450"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDHTRPzRuOaOPSuV8Yd-jwIkP6vlLv1X6E&q=Space+Needle,Seattle+WA" allowfullscreen>
-      </iframe>
+        <div id="mapContent" />
     </body>
 </html>
