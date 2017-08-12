@@ -14,7 +14,7 @@ app.get('/data/arterial', (req, res) => {
 });
 
 app.get('/data/pavement/:year', (req, res) => {
-    res.sendFile(path.resolve( __dirname, '../Data/Pavement Projects '+req.params.year+'/Pavement'+req.params.year+'.json'));
+    res.sendFile(path.resolve( __dirname, '../Data/Pavement Projects '+req.params.year+'/Pavement'+req.params.year+'.geojson'));
 });
 
 app.get('/scripts/:filename', (req, res) => {
