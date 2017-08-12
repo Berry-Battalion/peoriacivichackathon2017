@@ -1,3 +1,3 @@
 $(function(){
-    $('#mapContent').load("../templates/searchmap.html");
+    $('#mapContent').load("../templates/searchmap2.html");
 });
