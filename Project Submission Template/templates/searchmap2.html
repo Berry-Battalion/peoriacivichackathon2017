@@ -156,19 +156,27 @@
           });
           map.fitBounds(bounds);
         });
-        console.log("data:", data)
         if(data !== undefined) {
-          console.log('in the if')
-          console.log(data)
           for(var i = 0; i < data.length; i++) {
             map.data.loadGeoJson(data[i]);
           }
         }
       }
 
+      var constructionData = [];
+
+      function runGoogleMap() {
+        googleMap(constructionData);
+      }
+      
       $('#sidewalkData').click(function() {
-        console.log('clicked sidwalk')
-        googleMap(['https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson'])
+        constructionData.push('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson')
+        runGoogleMap();
+      })
+
+      $('#streetData').click(function() {
+        constructionData.push('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson')
+        runGoogleMap();
       })
 
     </script>
