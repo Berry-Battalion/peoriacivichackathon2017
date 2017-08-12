@@ -13,6 +13,10 @@ app.get('/data/arterial', (req, res) => {
     res.sendFile(path.resolve( __dirname, '../Data/Arterial Reconstruction/ArterialRecon.json'));
 });
 
+app.get('/data/pavement/:year', (req, res) => {
+    res.sendFile(path.resolve( __dirname, '../Data/Pavement Projects '+req.params.year+'/Pavement'+req.params.year+'.json'));
+});
+
 app.get('/scripts/:filename', (req, res) => {
     res.sendFile(path.resolve( __dirname, './scripts/'+req.params.filename));
 });
