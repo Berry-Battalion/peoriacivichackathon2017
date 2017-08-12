@@ -1,6 +1,10 @@
+//This is to set up the google maps into the index.html
+
 <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
+
+       /*This is to format the map and it's contents*/
       #map {
         height: 100%;
       }
@@ -87,15 +91,16 @@
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-      
 
-      
+
+      //This loads google maps
       function googleMap(data) {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.703545, lng: -89.579086},
           zoom: 13,
           mapTypeId: 'roadmap'
-        });
+        }
+      );
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
@@ -168,7 +173,9 @@
       function runGoogleMap() {
         googleMap(constructionData);
       }
-      
+
+      //These load the overlays
+
       $('#drivingData').click(function() {
         var theDrivingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson';
         if($(this)[0].checked) {
