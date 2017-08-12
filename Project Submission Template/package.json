@@ -1,0 +1,11 @@
+{
+  "name": "hackathon",
+  "description": "This is a sample submission for the Peoria Civic Hackathon. This is just a sample of what your repo can look like when you submit it\r to us as part of the final process for judging the hackathon.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
