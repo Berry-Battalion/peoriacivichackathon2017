@@ -2,7 +2,7 @@
 
 This is a sample submission for the Peoria Civic Hackathon. 
 
-PEORIA in Progress - An app that overlays construction data with possible routes based on the activity you plan to do. (Walking, Driving, Biking, etc)
+PEORIA in Progress - An app that overlays construction data with possible routes based on the activity you plan to do. (Bus, Driving, Biking, etc)
 
 ## Description
 
