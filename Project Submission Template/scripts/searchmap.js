@@ -6,6 +6,7 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
+//This is used to load the map data
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.693649, lng: -89.588986},
@@ -73,21 +74,4 @@
           });
           map.fitBounds(bounds);
         });
-        
-        //map.data.loadGeoJson('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson');
-        
-        /*
-        var bounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(40.593649, -89.488986),
-      new google.maps.LatLng(40.793649, -89.688986));
-
-  // The photograph is courtesy of the U.S. Geological Survey.
-  var srcImage = 'https://developers.google.com/maps/documentation/' +
-      'javascript/examples/full/images/talkeetna.png';
-
-  // The custom USGSOverlay object contains the USGS image,
-  // the bounds of the image, and a reference to the map.
-  overlay = new USGSOverlay(bounds, srcImage, map);
-  */
-        
       }

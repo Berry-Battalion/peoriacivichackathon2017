@@ -1,7 +1,5 @@
-function loadData() {
-
-}
-
+//This is to load the json data into the map
+//Returns Success or Failure
 
 var arterial = (function() {
     $.ajax({
@@ -13,6 +11,8 @@ var arterial = (function() {
         }
     });
 }());
+<<<<<<< HEAD
+=======
 
 
 
@@ -59,3 +59,4 @@ var pavement2017 = (function() {
         }
     });
 }());
+>>>>>>> 6ba00c4dd7b2970967d71338c8c0b3b820212218
