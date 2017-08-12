@@ -14,13 +14,13 @@ If possible, provide a couple screenshots of your project. You can use a tool li
 
 ## Data/APIs used
 
-If relevant, provide a list of Data and APIs you used in this project.
-
 Google Maps API
 
 Data API
 - /data/pavement/:year
   + fetches geojson data related to pavement projects based on the year
+- /data/arterial
+  + fetches geojson data related to arterial construction
 
 ## Team Members
 

@@ -1,6 +1,7 @@
 //This is to load the json data into the map
 //Returns Success or Failure
 
+//loads arterial data
 var arterial = (function() {
     $.ajax({
         async: true,
@@ -13,7 +14,7 @@ var arterial = (function() {
 }());
 
 
-
+// loads pavement construction data
 var pavement2014 = (function() {
     $.ajax({
         async: true,
@@ -25,6 +26,7 @@ var pavement2014 = (function() {
     });
 }());
 
+// loads pavement construction data
 var pavement2015 = (function() {
     $.ajax({
         async: true,
@@ -36,6 +38,7 @@ var pavement2015 = (function() {
     });
 }());
 
+// loads pavement construction data
 var pavement2016 = (function() {
     $.ajax({
         async: true,
@@ -47,6 +50,7 @@ var pavement2016 = (function() {
     });
 }());
 
+// loads pavement construction data
 var pavement2017 = (function() {
     $.ajax({
         async: true,

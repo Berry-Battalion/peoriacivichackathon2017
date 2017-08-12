@@ -170,9 +170,9 @@
             strokeColor: "red"
           });
         
-        map.data.loadGeoJson('./data/pavement/2014');
-        map.data.loadGeoJson('./data/pavement/2015');
-        map.data.loadGeoJson('./data/pavement/2016');
+        //map.data.loadGeoJson('./data/pavement/2014');
+        //map.data.loadGeoJson('./data/pavement/2015');
+        //map.data.loadGeoJson('./data/pavement/2016');
         map.data.loadGeoJson('./data/pavement/2017');
 
         if(data !== undefined) {
@@ -190,8 +190,11 @@
 
       //These load the overlays
 
+      
+      //jQuery function to pull in bus routes
+      // gets the data from github from the peoria civic hackathon repo
       $('#drivingData').click(function() {
-        var theDrivingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson';
+        var theDrivingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bus%20Routes/BusRoutes.geojson';
         if($(this)[0].checked) {
           constructionData.push(theDrivingData)
         } else {
@@ -204,6 +207,9 @@
         runGoogleMap();
       })
 
+      
+      //jQuery function to pull in biking routes
+      // gets the data from github from the peoria civic hackathon repo
       $('#bikingData').click(function() {
         var theBikingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson';
         if($(this)[0].checked) {
@@ -218,6 +224,8 @@
         runGoogleMap();
       })
 
+      //jQuery function to pull in walking construction
+      // gets the data from github from the peoria civic hackathon repo
       $('#walkingData').click(function() {
         var theWalkingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Sidewalk%20Construction/SidewalkConstruction.geojson';
         if($(this)[0].checked) {
