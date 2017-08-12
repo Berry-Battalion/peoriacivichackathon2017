@@ -167,6 +167,11 @@
           for(var i = 0; i < data.length; i++) {
             map.data.loadGeoJson(data[i]);
           }
+          
+          map.data.setStyle({
+            fillColor: 'green',
+            strokeColor: "green"
+          });
         }
       }
 
