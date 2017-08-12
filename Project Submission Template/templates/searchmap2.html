@@ -169,13 +169,45 @@
         googleMap(constructionData);
       }
       
-      $('#sidewalkData').click(function() {
-        constructionData.push('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson')
+      $('#drivingData').click(function() {
+        var theDrivingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson';
+        if($(this)[0].checked) {
+          constructionData.push(theDrivingData)
+        } else {
+          for(var i = 0; i < constructionData.length; i++) {
+            if(constructionData[i] === theDrivingData) {
+              constructionData.splice(i,1);
+            }
+          }
+        }
         runGoogleMap();
       })
 
-      $('#streetData').click(function() {
-        constructionData.push('https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Arterial%20Reconstruction/ArterialRecon.geojson')
+      $('#bikingData').click(function() {
+        var theBikingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Bike%20Trails%20on%20Roads/OnRoadBikeTrails.geojson';
+        if($(this)[0].checked) {
+          constructionData.push(theBikingData)
+        } else {
+          for(var i = 0; i < constructionData.length; i++) {
+            if(constructionData[i] === theBikingData) {
+              constructionData.splice(i,1);
+            }
+          }
+        }
+        runGoogleMap();
+      })
+
+      $('#walkingData').click(function() {
+        var theWalkingData = 'https://raw.githubusercontent.com/Berry-Battallion/peoriacivichackathon2017/master/Data/Sidewalk%20Construction/SidewalkConstruction.geojson';
+        if($(this)[0].checked) {
+          constructionData.push(theWalkingData)
+        } else {
+          for(var i = 0; i < constructionData.length; i++) {
+            if(constructionData[i] === theWalkingData) {
+              constructionData.splice(i,1);
+            }
+          }
+        }
         runGoogleMap();
       })
 
