@@ -164,6 +164,12 @@
           map.fitBounds(bounds);
         });
 
+        
+        map.data.setStyle({
+            fillColor: 'red',
+            strokeColor: "red"
+          });
+        
         map.data.loadGeoJson('./data/pavement/2014');
         map.data.loadGeoJson('./data/pavement/2015');
         map.data.loadGeoJson('./data/pavement/2016');
@@ -173,11 +179,6 @@
           for(var i = 0; i < data.length; i++) {
             map.data.loadGeoJson(data[i]);
           }
-          
-          map.data.setStyle({
-            fillColor: 'green',
-            strokeColor: "green"
-          });
         }
       }
 

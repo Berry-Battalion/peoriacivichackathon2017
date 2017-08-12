@@ -1,11 +1,12 @@
 # Peoria Civic Hackathon Submission Example
 
-This is a sample submission for the Peoria Civic Hackathon. This is just a sample of what your repo can look like when you submit it
-to us as part of the final process for judging the hackathon.
+This is a sample submission for the Peoria Civic Hackathon. 
+
+PEORIA in Progress - An app that overlays construction data with possible routes based on the activity you plan to do. (Walking, Driving, Biking, etc)
 
 ## Description
 
-A brief introduction to your project. It should include the motivation behind the project and also how it addresses the challenge statement.
+PEORIA in Progress is dedicated to assisting residents, business owners, and visitors of Peoria visualize and understand current and planned infrastructure projects
 
 ## Screenshots
 
@@ -15,10 +16,17 @@ If possible, provide a couple screenshots of your project. You can use a tool li
 
 If relevant, provide a list of Data and APIs you used in this project.
 
+Google Maps API
+
+Data API
+- /data/pavement/:year
+  + fetches geojson data related to pavement projects based on the year
+
 ## Team Members
 
-+ [name-of-a-team-member](URL to this member's github account)
-+ [name-of-a-team-member](URL to this member's github account)
-+ [name-of-a-team-member](URL to this member's github account)
-+ [name-of-a-team-member](URL to this member's github account)
-+ [name-of-a-team-member](URL to this member's github account)
++ [Sai Patchala](https://github.com/sia2311)
++ [Hira Jawed](https://github.com/hirajawed)
++ [Tyler Edmunds](https://github.com/TedtheDev)
++ [Shad Aziz](https://github.com/azizshad)
++ [Jared Reeve]
++ [Dorian Stoica]
