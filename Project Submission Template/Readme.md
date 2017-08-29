@@ -24,7 +24,7 @@ Data API
 
 ## Team Members
 
-+ [Sai Patchala](https://github.com/sia2311)
++ [Sai Patchala](https://github.com/sai2311)
 + [Hira Jawed](https://github.com/hirajawed)
 + [Tyler Edmunds](https://github.com/TedtheDev)
 + [Shad Aziz](https://github.com/azizshad)
