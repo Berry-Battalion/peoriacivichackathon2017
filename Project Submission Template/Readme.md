@@ -29,4 +29,4 @@ Data API
 + [Tyler Edmunds](https://github.com/TedtheDev)
 + [Shad Aziz](https://github.com/azizshad)
 + [Jared Reeve]
-+ [Dorian Stoica] 
++ [Dorian Stoica]
